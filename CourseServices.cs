@@ -43,12 +43,18 @@ namespace cs330_proj1
         //Add more service functions here, as needed, for the project
 
         /* As a student, I want to see all available courses so that I know what my options are */
-
+         public List<Course> getAllCourses()
+      {
+         return repo.Courses;
+      }
         /* As a student, I want to see all course offerings by semester, so that I can choose from what's
            available to register for next semester */
 
         /* As a student I want to see all course offerings by semester and department so that I can 
         choose major courses to register for */
+
+
+        // Later Project
 
         /* As a student I want to see all courses that meet a core goal, so that I can plan out
            my courses over the next few semesters and choose core courses that make sense for me */
