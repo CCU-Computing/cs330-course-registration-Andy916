@@ -39,32 +39,10 @@ namespace cs330_proj1
             return courseOfferingsThatMeetGoal;
         }
 
-
         
         //Add more service functions here, as needed, for the project
 
         /* As a student, I want to see all available courses so that I know what my options are */
-
-        /* As a student, I want to see all course offerings by semester, so that I can choose from what's available to register for next semester */
-         public List<CourseOffering> getOfferingsBySemester(string semester)
-      {
-         List<CourseOffering> allOfferings = repo.Offerings;
-         List<CourseOffering> result = new List<CourseOffering>();
-
-         foreach (CourseOffering offering in allOfferings)
-         {
-            if (offering.Semester.Equals(semester))
-            {
-                  result.Add(offering);
-            }
-         }
-         return result;
-      }
-
-
-        /* As a student I want to see all course offerings by semester and department so that I can 
-        choose major courses to register for */
- 
          public List<Course> getAllCourses()
       {
          return repo.Courses;
@@ -88,5 +66,7 @@ namespace cs330_proj1
         /* As a freshman adviser, I want to see all the core goals which do not have any course offerings 
            for a given semester, so that I can work with departments to get some courses offered
            that students can take to meet those goals */
+
+        
      }
 }
